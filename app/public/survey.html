@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Survey</h1>
+        </div>
+        <div>
+            <form id="survey">
+                <label for="name">Name<br>
+                    <input class="form-control" type="text" placeholder="Input Name" id="name">
+                    <p>On a scale from 1-5 with 1 being strongly disagree and 5 being strongly agree</p>
+                    <label for="question1">Are you introverted?<br>
+                        <input id="1" type="radio" name="q1" value="1">1
+                        <input id="2" type="radio" name="q1" value="2">2
+                        <input id="3" type="radio" name="q1" value="3">3
+                        <input id="4" type="radio" name="q1" value="4">4
+                        <input id="5" type="radio" name="q1" value="5">5
+                    </label>
+                    <br>
+                    <label for="question3">Do you like going outdoors?<br>
+                        <input id="1" type="radio" name="q2" value="1">1
+                        <input id="2" type="radio" name="q2" value="2">2
+                        <input id="3" type="radio" name="q2" value="3">3
+                        <input id="4" type="radio" name="q2" value="4">4
+                        <input id="5" type="radio" name="q2" value="5">5
+                    </label>
+                    <br>
+                    <label for="question1">Do you prefer to lounge around?<br>
+                        <input id="1" type="radio" name="q3" value="1">1
+                        <input id="2" type="radio" name="q3" value="2">2
+                        <input id="3" type="radio" name="q3" value="3">3
+                        <input id="4" type="radio" name="q3" value="4">4
+                        <input id="5" type="radio" name="q3" value="5">5
+                    </label>
+                    <br>
+                    <label for="question1">Are you a modest person?<br>
+                        <input id="1" type="radio" name="q4" value="1">1
+                        <input id="2" type="radio" name="q4" value="2">2
+                        <input id="3" type="radio" name="q4" value="3">3
+                        <input id="4" type="radio" name="q4" value="4">4
+                        <input id="5" type="radio" name="q4" value="5">5
+                    </label>
+                    <br>
+                    <label for="question1">Do you like coding?<br>
+                        <input id="1" type="radio" name="q5" value="1">1
+                        <input id="2" type="radio" name="q5" value="2">2
+                        <input id="3" type="radio" name="q5" value="3">3
+                        <input id="4" type="radio" name="q5" value="4">4
+                        <input id="5" type="radio" name="q5" value="5">5
+                    </label>
+                    <br>
+                    <label for="question1">Do you like depending on other people?<br>
+                        <input id="1" type="radio" name="q6" value="1">1
+                        <input id="2" type="radio" name="q6" value="2">2
+                        <input id="3" type="radio" name="q6" value="3">3
+                        <input id="4" type="radio" name="q6" value="4">4
+                        <input id="5" type="radio" name="q6" value="5">5
+                    </label>
+                    <br>
+                    <label for="question1">Do you think you are a likeable person?<br>
+                        <input id="1" type="radio" name="q7" value="1">1
+                        <input id="2" type="radio" name="q7" value="2">2
+                        <input id="3" type="radio" name="q7" value="3">3
+                        <input id="4" type="radio" name="q7" value="4">4
+                        <input id="5" type="radio" name="q7" value="5">5
+                    </label>
+                    <br>
+                    <label for="question1">Are you dependable?<br>
+                        <input id="1" type="radio" name="q8" value="1">1
+                        <input id="2" type="radio" name="q8" value="2">2
+                        <input id="3" type="radio" name="q8" value="3">3
+                        <input id="4" type="radio" name="q8" value="4">4
+                        <input id="5" type="radio" name="q8" value="5">5
+                    </label>
+                    <br>
+                    <label for="question1">Do you enjoy playing video games<br>
+                        <input id="1" type="radio" name="q9" value="1">1
+                        <input id="2" type="radio" name="q9" value="2">2
+                        <input id="3" type="radio" name="q9" value="3">3
+                        <input id="4" type="radio" name="q9" value="4">4
+                        <input id="5" type="radio" name="q9" value="5">5
+                    </label>
+                    <br>
+                    <label for="question1">How badly do you want a friend?<br>
+                        <input id="1" type="radio" name="q10" value="1">1
+                        <input id="2" type="radio" name="q10" value="2">2
+                        <input id="3" type="radio" name="q10" value="3">3
+                        <input id="4" type="radio" name="q10" value="4">4
+                        <input id="5" type="radio" name="q10" value="5">5
+                    </label>
+                    <br>
+                    <button type="submit" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#exampleModalLong">Submit</button>
+            </form>
+            <button type="button" class="btn btn-primary" onclick="location.href='/';">Return to homepage</button>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Your best match is?????</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="bestMatch">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#submit').on('click', function (event) {
+        event.preventDefault();
+        var total = 0;
+        var answers = $('input:checked').serializeArray();
+        console.log(answers);
+        answers.forEach(function (ans) {
+            total += parseInt(ans.value);
+        });
+
+
+        var surveyAnswers = {
+            name: $("#name").val().trim(),
+            scores: Number(total)
+        };
+
+        $.post("/api/friends", surveyAnswers)
+            .then(function (data) {
+                console.log(data);
+                $('#bestMatch').html(data.name);
+            });
+
+    });
+</script>
+
+</html>

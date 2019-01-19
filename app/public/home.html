@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "jumbotron">
+            <h1>Friend Finder</h1>
+            <h2>Take the survey to find who you will match up with!</h2>
+        </div>
+        <div>
+            <p>People who have taken the survey</p>
+            <ul>
+                
+            </ul>
+            <button type="button" class="btn btn-primary" onclick="location.href='/survey';">Take Survey</button>
+        </div>
+    </div>
+    <script>
+       $(document).ready(function(){
+           $.get('api/friends',function(data){
+               console.log(data);
+               
+               for(var i =0;i<data.length;i++){
+                var list = `<li> ${data[i].name} </li>`;
+                $('ul').append(list);
+               }
+           })
+       })
+    </script>
+</body>
